@@ -38,9 +38,9 @@ int main()
 	
 	// ------ RECEBER O NOME DOS JOGADORES 1 E 2 ------
 	cout << "Digite o nome do jogador 1 : " << endl;
-	cin >> jog1;
+	getline (cin, jog1);
 	cout << "Digite o nome do jogador 2 : " << endl;
-	cin >> jog2;
+	getline (cin, jog2);
 	
 
 	// Limpa a tela e inicia o jogo.
@@ -51,17 +51,13 @@ int main()
 	while (!sair)
 	{
 		// ------ MOSTRAR O PLACAR EM TELA COMO NA IMAGEM ------
-		cout << "" << jog1;
-		cout << " " << pont_jog1;
-		cout << " X" ;
-		cout << " " << pont_jog2 ;
-		cout << " " << jog2 << endl;
+		cout << jog1 << " " << pont_jog1 << " x " << pont_jog2 << " " << jog2;
 		cout << endl;
 		 
 
 		// ------ MOSTRAR AS MOEDAS EM TELA COMO NA IMAGEM ------
 		for (qnt_moedas_tira = 0; qnt_moedas_tira < moedas ; qnt_moedas_tira++) {
-			cout << "\xDC  ";
+			cout << "@  ";
 			
 					}
 					
